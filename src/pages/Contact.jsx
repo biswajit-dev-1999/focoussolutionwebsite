@@ -228,7 +228,7 @@ function MapSection() {
 
             {/* Left: text content */}
             <div
-              className="bg-[#1C2421] p-12 lg:p-20 flex flex-col justify-center text-white relative overflow-hidden"
+              className="bg-[rgb(18,42,89)] p-12 lg:p-20 flex flex-col justify-center text-white relative overflow-hidden"
             >
               {/* Decorative faint rings */}
               <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full border border-white/5 -translate-y-1/2 translate-x-1/4 pointer-events-none" />

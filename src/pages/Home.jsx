@@ -100,26 +100,26 @@ const PORTFOLIO = [
     label: 'Urban Infrastructure',
     title: 'The Meridian Center',
     desc: 'Comprehensive project management for a mixed-use commercial development.',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80',
+    img: '/Infrastructure.jpeg',
     large: true,
   },
   {
     id: 'nexus',
     label: 'Digital Excellence',
     title: 'Nexus Cloud Hub',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    img: '/Excellence.jpeg',
   },
   {
     id: 'vision',
     label: 'Strategic Planning',
     title: 'Vision 2031',
-    img: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80',
+    img: '/Planning.jpeg',
   },
   {
     id: 'green',
     label: 'Real Estate',
     title: 'Green Horizon Estates',
-    img: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=900&q=80',
+    img: 'Estates.jpeg',
     wide: true,
   },
 ]
@@ -341,7 +341,7 @@ function HeroSection() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85"
+                src="/Headquaters.jpeg"
                 alt="Modern premium office interior — Focus Solutions"
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -407,7 +407,7 @@ function HeroSection() {
               <div className="flex items-center gap-2.5">
                 <div className="flex -space-x-2">
                   {[
-                    'https://images.unsplash.com/photo-1494790108755-2616b61b8e37?w=40&q=80',
+                    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&q=80',
                     'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&q=80',
                     'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&q=80',
                   ].map((src, i) => (
@@ -568,7 +568,7 @@ function AdvantageSection() {
           <div className="reveal from-left relative">
             <div className="img-zoom rounded-[48px] overflow-hidden" style={{ height: '520px' }}>
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+                src="/Leaders.jpeg"
                 alt="Focus Solutions team collaboration"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -744,8 +744,8 @@ function CTASection() {
       {/* Radial glow */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse at 50% -20%, rgba(184,150,12,0.14) 0%, transparent 60%)',
+        style={{ 
+          background: 'linear-gradient(135deg, rgb(18, 42, 89) 0%, rgba(18, 42, 89, 0.8) 50%, rgba(18, 42, 89, 0.6) 100%)'
         }}
       />
 

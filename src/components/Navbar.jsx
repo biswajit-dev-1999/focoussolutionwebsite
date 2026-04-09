@@ -40,15 +40,15 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       <div className="max-w-[1280px] mx-auto px-10 flex items-center justify-between">
-        
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <img 
-            src="/logo101.png" 
-            alt="Focus Solutions Logo" 
-            className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
-          />
-        </Link>
+
+{/* Logo */}
+<Link to="/" className="flex items-center gap-3 group">
+  <img 
+    src="/logo101.png" 
+    alt="Focus Solutions Logo" 
+    className="h-16 md:h-18 w-auto object-contain rounded-full bg-white p-1 shadow-sm transition-transform duration-300 group-hover:scale-105"
+  />
+</Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-10">

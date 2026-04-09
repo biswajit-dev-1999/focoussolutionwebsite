@@ -24,6 +24,7 @@ export default function Services() {
 function ServicesHero() {
   return (
     <section className="relative min-h-[85vh] flex flex-col justify-center overflow-hidden" style={{ background: 'var(--color-cream)' }}>
+
       {/* Background decorations */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] pointer-events-none opacity-50"
         style={{ background: 'radial-gradient(circle, rgba(184,150,12,0.12) 0%, transparent 65%)' }} />
@@ -32,7 +33,8 @@ function ServicesHero() {
 
       <div className="max-w-[1280px] mx-auto px-10 w-full pt-40 pb-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-24 items-end">
-          
+
+          {/* LEFT SIDE */}
           <div className="reveal from-left">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#B8960C]/20 bg-[#FDF6E3] mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#B8960C] animate-pulse" />
@@ -40,14 +42,14 @@ function ServicesHero() {
                 Precision in Execution
               </p>
             </div>
-            
+
             <h1
               className="font-black tracking-tighter leading-[0.95] mb-8 text-[#1A1A1A]"
               style={{ fontSize: 'clamp(3.5rem, 7vw, 6.5rem)' }}
             >
-              Strategic<br/>
+              Strategic<br />
               <span className="text-transparent" style={{ WebkitTextStroke: '2.5px #1A1A1A' }}>Services</span>
-              <br/>
+              <br />
               <span className="flex items-center gap-4">
                 <em
                   className="not-italic text-[#B8960C]"
@@ -58,23 +60,37 @@ function ServicesHero() {
                 <span className="text-[0.8em]">for growth.</span>
               </span>
             </h1>
-            
+
             <p className="text-[1.1rem] text-[#4A4A4A] leading-[1.8] max-w-[540px]">
               We blend traditional consultancy expertise with modern digital agility to provide a comprehensive
               suite of solutions designed for the complex global professional landscape.
             </p>
           </div>
-          
-          <div className="reveal from-right relative hidden lg:block">
-             <div className="absolute -left-12 -top-12 w-24 h-24 rounded-full border border-dashed border-[#B8960C]/40 animate-[spin-slow_20s_linear_infinite]" />
-             <p
-              className="text-[#1A1A1A]/10 text-right font-black"
-              style={{ fontSize: '8rem', lineHeight: 0.8, letterSpacing: '-0.05em' }}
-            >
-              01<br/>SRV
-            </p>
+
+          {/* RIGHT SIDE (UPDATED WITH ANIMATED IMAGE) */}
+          <div className="reveal from-right relative hidden lg:flex justify-end items-end">
+
+            {/* Glow Background */}
+            <div className="absolute inset-0 blur-3xl opacity-30"
+              style={{
+                background: 'radial-gradient(circle, rgba(184,150,12,0.3), transparent 70%)'
+              }}
+            />
+
+            {/* Floating Image */}
+            <div className="relative w-full max-w-[600px] h-[550px] rounded-[40px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.2)] animate-float">
+
+              <img
+                src="/Services.jpeg"
+                alt="Services"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -97,7 +113,7 @@ function ContractStaffingSection() {
           >
             <div className="absolute top-0 right-0 w-[400px] h-[400px] pointer-events-none opacity-[0.03] transition-transform duration-700 group-hover:scale-110"
               style={{ background: 'radial-gradient(circle, #2D5016 0%, transparent 70%)' }} />
-              
+
             <div className="flex flex-col h-full justify-between relative z-10">
               <div>
                 <div
@@ -107,14 +123,14 @@ function ContractStaffingSection() {
                   <span className="w-2 h-2 rounded-full bg-[#2D5016]" />
                   Human Capital
                 </div>
-                
+
                 <h2
                   className="font-black tracking-tight mb-6 text-[#1A1A1A]"
                   style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', lineHeight: 1.1 }}
                 >
-                  Contract Staffing<br/>Solutions
+                  Contract Staffing<br />Solutions
                 </h2>
-                
+
                 <p className="text-[1.05rem] text-[#4A4A4A] leading-[1.8] mb-10 max-w-[500px]">
                   Acquire elite talent on your terms. We provide agile staffing models that scale with your project lifecycle,
                   ensuring operational continuity with high-performance specialized teams.
@@ -137,28 +153,28 @@ function ContractStaffingSection() {
           {/* Data Transmission — compact tall card */}
           <div
             className="reveal reveal-delay-2 card-lift rounded-[40px] p-12 flex flex-col justify-between overflow-hidden relative group"
-            style={{ 
-              background: 'linear-gradient(145deg, #1C2421 0%, #2A3D2D 100%)',
+            style={{
+              background: 'linear-gradient(145deg, rgb(18, 42, 89) 0%, rgb(18, 42, 89) 100%)',
               boxShadow: '0 16px 48px rgba(28,36,33,0.15)',
               color: 'white'
             }}
           >
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+')] opacity-50" />
-            
+
             <div className="relative z-10">
               <div
                 className="w-14 h-14 rounded-[16px] flex items-center justify-center mb-8 bg-white/10 backdrop-blur-sm border border-white/10 shadow-inner"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8960C" strokeWidth="2.5">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                 </svg>
               </div>
-              <h3 className="font-black tracking-tight text-[1.8rem] text-white mb-4 leading-snug">Data<br/>Transmission</h3>
+              <h3 className="font-black tracking-tight text-[1.8rem] text-white mb-4 leading-snug">Data<br />Transmission</h3>
               <p className="text-[0.95rem] text-white/70 leading-[1.8] mb-8">
                 Secure, ultra-high-speed infrastructure for global connectivity. Robust conduits for sensitive digital assets.
               </p>
             </div>
-            
+
             <div className="mt-auto relative z-10 bg-black/20 p-6 rounded-[24px] border border-white/5 backdrop-blur-md">
               <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-white/50 mb-3">
                 Latency Optimization
@@ -185,7 +201,7 @@ function EducationRealEstateSection() {
   return (
     <section className="py-28" style={{ background: 'var(--color-cream)' }}>
       <div className="max-w-[1280px] mx-auto px-10">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
 
           {/* Real Estate — image card on left */}
@@ -194,7 +210,7 @@ function EducationRealEstateSection() {
           >
             <div className="h-[280px] overflow-hidden relative">
               <img
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+                src="Architecture.jpeg"
                 alt="Real estate city skyline"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 loading="lazy"
@@ -228,12 +244,12 @@ function EducationRealEstateSection() {
               <div className="w-16 h-16 rounded-[18px] bg-white flex items-center justify-center text-3xl shadow-sm mb-8">
                 🎓
               </div>
-              <h3 className="font-black text-[2rem] tracking-tight text-[#1A1A1A] mb-6 leading-tight">Education &amp;<br/>Training</h3>
+              <h3 className="font-black text-[2rem] tracking-tight text-[#1A1A1A] mb-6 leading-tight">Education &amp;<br />Training</h3>
               <p className="text-[1rem] text-[#4A4A4A] leading-[1.8] mb-10">
                 Future-proofing your workforce through bespoke curriculum development and leadership workshops
                 designed for the digital-first era.
               </p>
-              
+
               <div className="mt-auto flex flex-wrap gap-3">
                 {['Leadership Programs', 'Agile Methodologies', 'Digital Literacy'].map((tag) => (
                   <span
@@ -254,7 +270,7 @@ function EducationRealEstateSection() {
             <div className="w-full relative">
               {/* Background circular dashes */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border-[1.5px] border-dashed border-[#B8960C]/30 animate-[spin-slow_30s_linear_infinite]" />
-              
+
               <div className="relative z-10 py-10">
                 <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[#7A7A7A] mb-4">
                   Next Masterclass
@@ -269,7 +285,7 @@ function EducationRealEstateSection() {
                 <p className="text-[0.8rem] font-bold tracking-[0.1em] uppercase text-[#B8960C] mb-8">
                   Strategic Thinking
                 </p>
-                
+
                 <Link
                   to="/contact"
                   className="inline-flex w-[80%] mx-auto justify-center px-6 py-4 rounded-full bg-[#1A1A1A] text-white
@@ -280,7 +296,7 @@ function EducationRealEstateSection() {
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -303,7 +319,7 @@ function TrustedSection() {
           <div className="flex items-center justify-center mb-10">
             <div className="flex -space-x-4 shadow-xl rounded-full p-2 bg-white/50 backdrop-blur-md border border-white">
               {[
-                'https://images.unsplash.com/photo-1494790108755-2616b61b8e37?w=100&q=80',
+                'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
                 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
                 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
                 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
@@ -328,20 +344,20 @@ function TrustedSection() {
             className="font-black tracking-tight mb-6 text-[#1A1A1A]"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1 }}
           >
-            Trusted by Global<br/>Industry Leaders
+            Trusted by Global<br />Industry Leaders
           </h2>
           <p className="text-[1.1rem] text-[#7A7A7A] max-w-[600px] mx-auto mb-12 leading-[1.8]">
             Join the network of forward-thinking enterprises leveraging Focus Solutions for mission-critical
             infrastructure, staffing, and strategic management.
           </p>
-          
+
           <Link
             to="/contact"
             className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#1A1A1A] text-white
               font-bold text-[0.85rem] uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:scale-105 hover:shadow-[0_16px_40px_rgba(184,150,12,0.3)]"
           >
             Consult Our Experts
-            <span className="bg-white/20 p-1.5 rounded-full"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <span className="bg-white/20 p-1.5 rounded-full"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
           </Link>
         </div>
       </div>

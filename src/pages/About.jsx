@@ -124,7 +124,7 @@ function AboutHero() {
           <div className="reveal from-right relative lg:pl-10">
             <div className="w-full max-w-[500px] ml-auto relative z-10 img-zoom rounded-[40px] overflow-hidden shadow-[0_24px_60px_rgba(0,0,0,0.15)]" style={{ height: '580px' }}>
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&q=80"
+                src="/Team2.jpeg"
                 alt="Focus Solutions modern office"
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -139,7 +139,7 @@ function AboutHero() {
             {/* Overlapping small image */}
             <div className="absolute top-20 -left-6 w-[260px] h-[280px] rounded-[32px] overflow-hidden shadow-2xl z-20 border-[8px] border-[#F5F0E8]">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
+                src="/Team1.jpeg"
                 alt="Team working collaboratively"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -206,7 +206,7 @@ function FounderLegalSection() {
             <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center mb-10">
               <div className="relative shrink-0">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=250&q=80"
+                  src="/PradeepSir.png"
                   alt="Mr. Pradeep Kumar Mukherjee"
                   className="w-28 h-28 rounded-full object-cover border-4 border-white shadow-xl"
                 />
@@ -238,7 +238,7 @@ function FounderLegalSection() {
           <div
             className="reveal reveal-delay-2 card-lift rounded-[40px] p-12 flex flex-col justify-between relative overflow-hidden"
             style={{ 
-              background: 'linear-gradient(135deg, #1C2421 0%, #2A3D2D 100%)',
+              background: 'linear-gradient(135deg, rgb(18, 42, 89) 0%, rgba(18, 42, 89, 0.7) 100%)',
               boxShadow: '0 16px 48px rgba(28,36,33,0.2)',
               color: 'white'
             }}
@@ -260,7 +260,7 @@ function FounderLegalSection() {
                 </p>
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <p className="text-[1.6rem] sm:text-[1.8rem] font-black tracking-widest text-[#B8960C]">18OOPM4494P1Z3</p>
-                  <div className="flex items-center gap-2 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/30">
+                  <div className="flex items-center gap-2 bg-[#B8960C]/20 px-3 py-1.5 rounded-full border border-[#B8960C]/40">
                     <span className="flex h-2.5 w-2.5 relative">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
@@ -306,7 +306,7 @@ function MissionVisionSection() {
           <div
             className="reveal card-lift relative rounded-[40px] overflow-hidden group min-h-[460px] flex items-end shadow-[0_16px_40px_rgba(0,0,0,0.08)]"
           >
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80" alt="Mission strategy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+            <img src="/Mission.jpeg" alt="Mission strategy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1C2421] via-[#1C2421]/90 to-transparent" />
             <div className="relative z-10 p-12 text-white w-full">
               <div className="flex items-center gap-3 mb-6">
@@ -326,7 +326,7 @@ function MissionVisionSection() {
           <div
             className="reveal reveal-delay-2 card-lift relative rounded-[40px] overflow-hidden group min-h-[460px] flex items-end shadow-[0_16px_40px_rgba(184,150,12,0.15)]"
           >
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=80" alt="Vision future" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+            <img src="Vision.jpeg" alt="Vision future" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#B8960C] via-[#B8960C]/90 to-transparent" />
             <div className="relative z-10 p-12 text-white w-full">
                <div className="flex items-center gap-3 mb-6">
@@ -380,10 +380,19 @@ function ZedPhilosophySection() {
               key={item.letter}
               className={`reveal reveal-delay-${i + 1} card-lift rounded-[40px] p-12 relative overflow-hidden group`}
               style={{
-                background: i === 1 ? 'linear-gradient(135deg, #1C2421 0%, #2A3D2D 100%)' : 'white',
+                background: i === 1 
+                  ? 'linear-gradient(135deg, rgb(10, 25, 60) 0%, rgb(18, 42, 89) 50%, rgb(25, 55, 110) 100%)' 
+                  : 'white',
+              
                 color: i === 1 ? 'white' : 'inherit',
-                boxShadow: i === 1 ? '0 20px 50px rgba(45,80,22,0.15)' : '0 16px 40px rgba(0,0,0,0.05)',
-                border: i === 1 ? 'none' : '1px solid rgba(0,0,0,0.04)',
+              
+                boxShadow: i === 1 
+                  ? '0 20px 50px rgba(18,42,89,0.25)' 
+                  : '0 16px 40px rgba(0,0,0,0.05)',
+              
+                border: i === 1 
+                  ? 'none' 
+                  : '1px solid rgba(0,0,0,0.04)',
               }}
             >
               {/* Big letter watermark */}

@@ -24,14 +24,23 @@ export default function Projects() {
 ───────────────────────────────────────────── */
 function ProjectsHero() {
   return (
-    <section className="relative min-h-[75vh] flex flex-col justify-center overflow-hidden" style={{ background: 'var(--color-cream)' }}>
-      {/* Background decorations */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-40"
-        style={{ background: 'radial-gradient(circle, rgba(184,150,12,0.15) 0%, transparent 70%)' }} />
+    <section
+      className="relative min-h-[75vh] flex flex-col justify-center overflow-hidden"
+      style={{ background: 'var(--color-cream)' }}
+    >
+      {/* Background */}
+      <div
+        className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-40"
+        style={{
+          background:
+            'radial-gradient(circle, rgba(184,150,12,0.15) 0%, transparent 70%)',
+        }}
+      />
 
       <div className="max-w-[1280px] mx-auto px-10 w-full pt-40 pb-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
-          
+
+          {/* LEFT SIDE */}
           <div className="reveal from-left">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#1A1A1A]/10 mb-8">
               <span className="w-2 h-2 rounded-full bg-[#1A1A1A] animate-pulse" />
@@ -39,53 +48,79 @@ function ProjectsHero() {
                 Portfolio Highlights
               </p>
             </div>
-            
+
             <h1
               className="font-black tracking-tighter leading-[0.95]"
               style={{ fontSize: 'clamp(3.8rem, 8vw, 6.5rem)' }}
             >
               Our{' '}
-              <span className="text-transparent" style={{ WebkitTextStroke: '2.5px #B8960C' }}>Signature</span>
+              <span
+                className="text-transparent"
+                style={{ WebkitTextStroke: '2.5px #B8960C' }}
+              >
+                Signature
+              </span>
               <br />
               <span className="text-[#1A1A1A]">Impacts.</span>
             </h1>
-            
+
             <p className="text-[1.1rem] text-[#4A4A4A] leading-[1.8] max-w-[480px] mt-8">
-              We curate strategic interventions that reshape entire industries. From national food safety standards
-              to high-tech educational paradigms, our work speaks for itself.
+              We curate strategic interventions that reshape entire industries.
+              From national food safety standards to high-tech educational paradigms,
+              our work speaks for itself.
             </p>
           </div>
 
-          {/* Right: stat + label */}
-          <div className="reveal from-right flex justify-start lg:justify-end items-end pb-4">
-            <div className="text-left lg:text-right">
+          {/* RIGHT SIDE (BIG IMAGE) */}
+          <div className="reveal from-right relative flex justify-center lg:justify-end items-end">
+
+            {/* BIG IMAGE */}
+            <div className="w-full max-w-[520px] h-[420px] rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
+              <img
+                src="Signature.jpeg"
+                alt="Impact"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* FLOATING CARD */}
+            <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg">
               <p
-                className="text-[2.2rem] text-[#B8960C]/60 mb-6"
-                style={{ fontFamily: 'var(--font-script)', transform: 'rotate(-4deg)' }}
+                className="text-[1.4rem] text-[#B8960C]/70 mb-2"
+                style={{ fontFamily: 'var(--font-script)' }}
               >
                 Precision at scale.
               </p>
-              
-              <div className="flex items-center gap-4 lg:justify-end">
+
+              <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
                   {['#B8960C', '#2D5016', '#1A1A1A'].map((c) => (
-                    <div key={c} className="w-10 h-10 rounded-full border-[3px] border-[#F5F0E8] shadow-sm" style={{ background: c }} />
+                    <div
+                      key={c}
+                      className="w-8 h-8 rounded-full border-[2px] border-white"
+                      style={{ background: c }}
+                    />
                   ))}
                 </div>
-                <div className="text-left">
-                  <span className="block text-[1rem] font-black text-[#1A1A1A] leading-none">150+</span>
-                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.1em] text-[#7A7A7A]">Projects Delivered</span>
+
+                <div>
+                  <span className="block text-sm font-black text-[#1A1A1A] leading-none">
+                    150+
+                  </span>
+                  <span className="text-[0.6rem] uppercase tracking-[0.1em] text-[#7A7A7A]">
+                    Projects
+                  </span>
                 </div>
               </div>
             </div>
+
           </div>
-          
+
         </div>
       </div>
     </section>
   )
 }
-
 /* ─────────────────────────────────────────────
    FOSTAC + AIRTEL SECTION
 ───────────────────────────────────────────── */
@@ -131,7 +166,7 @@ function FostacAirtelSection() {
           <div className="reveal reveal-delay-2 relative rounded-[40px] overflow-hidden img-zoom shadow-[0_12px_40px_rgba(0,0,0,0.08)]"
             style={{ minHeight: '400px' }}>
             <img
-              src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
+              src="/Fostac.jpeg"
               alt="FOSTAC food safety project"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -222,7 +257,7 @@ function EducationZedSection() {
           <div
             className="reveal reveal-delay-2 card-lift rounded-[40px] p-12 flex flex-col"
             style={{ 
-              background: 'linear-gradient(135deg, #1C2421 0%, #2A3D2D 100%)',
+              background: 'linear-gradient(135deg, rgb(12, 30, 70) 0%, rgb(18, 42, 89) 100%)',
               boxShadow: '0 16px 48px rgba(45,80,22,0.15)',
               color: 'white'
             }}
@@ -257,7 +292,7 @@ function EducationZedSection() {
           {/* IIT image */}
           <div className="reveal reveal-delay-3 rounded-[40px] overflow-hidden img-zoom shadow-[0_12px_40px_rgba(0,0,0,0.08)]" style={{ minHeight: '400px' }}>
             <img
-              src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80"
+              src="Certification.jpeg"
               alt="IIT Bhubaneswar campus"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -326,7 +361,7 @@ function SalassSection() {
             {/* Right: image */}
             <div className="img-zoom relative" style={{ minHeight: '500px' }}>
               <img
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1000&q=80"
+                src="Luxury.jpeg"
                 alt="SALASS Infra luxury building"
                 className="w-full h-full object-cover"
                 loading="lazy"

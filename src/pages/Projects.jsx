@@ -306,7 +306,7 @@ function EducationZedSection() {
 }
 
 /* ─────────────────────────────────────────────
-   SALASS INFRA — FULL WIDTH LUXURY CARD
+   REAL ESTATE — FULL WIDTH LUXURY CARD
 ───────────────────────────────────────────── */
 function SalassSection() {
   return (
@@ -328,10 +328,10 @@ function SalassSection() {
                   className="w-14 h-14 rounded-[14px] flex items-center justify-center text-[0.9rem] font-black text-white shadow-lg"
                   style={{ background: 'linear-gradient(135deg, #B8960C, #8A6E00)' }}
                 >
-                  SI
+                  RE
                 </div>
                 <div>
-                  <p className="text-[1rem] font-black text-[#1A1A1A] tracking-tight">SALASS Infra</p>
+                  <p className="text-[1rem] font-black text-[#1A1A1A] tracking-tight">Real Estate</p>
                   <p className="text-[0.65rem] text-[#7A7A7A] uppercase tracking-[0.15em] font-bold">Real Estate Portfolio</p>
                 </div>
               </div>
@@ -362,7 +362,7 @@ function SalassSection() {
             <div className="img-zoom relative" style={{ minHeight: '500px' }}>
               <img
                 src="Luxury.jpeg"
-                alt="SALASS Infra luxury building"
+                alt="Real Estate luxury building"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

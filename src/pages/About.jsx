@@ -224,7 +224,7 @@ function FounderLegalSection() {
               <span className="absolute -top-6 -left-4 text-7xl text-[#B8960C]/15 font-serif leading-none">"</span>
               <blockquote className="text-[1.1rem] text-[#4A4A4A] leading-[1.85] italic pl-8 border-l-[3px] border-[#B8960C] relative z-10">
                 Focus is not just about looking ahead, but about refining the clarity of our current actions to define
-                a better tomorrow. At FocusSolutions we lead every client forward with purpose, agility, and uncompromising integrity.
+                a better tomorrow. At FocusSolutions we lead every client forward with purpose, agility,and uncompromising integrity.
               </blockquote>
             </div>
             
@@ -259,7 +259,9 @@ function FounderLegalSection() {
                   GST Registration Number
                 </p>
                 <div className="flex items-center justify-between flex-wrap gap-4">
-                  <p className="text-[1.6rem] sm:text-[1.8rem] font-black tracking-widest text-[#B8960C]">18OOPM4494P1Z3</p>
+                  <p className="text-[1.35rem] sm:text-[1.8rem] font-black tracking-widest text-[#B8960C] min-w-0 whitespace-nowrap overflow-x-auto">
+                    18OOPM4494P1Z3
+                  </p>
                   <div className="flex items-center gap-2 bg-[#B8960C]/20 px-3 py-1.5 rounded-full border border-[#B8960C]/40">
                     <span className="flex h-2.5 w-2.5 relative">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -271,7 +273,7 @@ function FounderLegalSection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/10 relative z-10">
               <div>
                 <p className="text-[0.65rem] font-bold tracking-[0.15em] uppercase text-white/50 mb-2">
                   Entity Type

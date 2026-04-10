@@ -94,7 +94,7 @@ function ContactHero() {
                   </svg>
                 }
                 label="Digital Correspondence"
-                value="hello@focussolutions.com"
+                value="info@focussolution.in"
               />
             </div>
           </div>

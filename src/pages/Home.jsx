@@ -633,7 +633,7 @@ function AdvantageSection() {
             </div>
 
             <p className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-[#7A7A7A] mb-5">
-              LET'S TALK: <strong className="text-[#1A1A1A]">SALASS</strong>
+               <strong className="text-[#1A1A1A]"></strong>
             </p>
             <Link
               to="/about"

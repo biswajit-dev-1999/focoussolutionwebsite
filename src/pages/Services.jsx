@@ -31,11 +31,11 @@ function ServicesHero() {
       <div className="absolute top-[30%] -right-20 w-[400px] h-[400px] pointer-events-none opacity-40"
         style={{ background: 'radial-gradient(circle, rgba(45,80,22,0.1) 0%, transparent 65%)' }} />
 
-      <div className="max-w-[1280px] mx-auto px-10 w-full pt-40 pb-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-24 items-end">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 w-full pt-20 sm:pt-32 lg:pt-40 pb-12 sm:pb-16 lg:pb-20 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 sm:gap-12 lg:gap-24 items-center lg:items-end">
 
           {/* LEFT SIDE */}
-          <div className="reveal from-left">
+          <div className="reveal from-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#B8960C]/20 bg-[#FDF6E3] mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#B8960C] animate-pulse" />
               <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-[#B8960C]">
@@ -44,13 +44,13 @@ function ServicesHero() {
             </div>
 
             <h1
-              className="font-black tracking-tighter leading-[0.95] mb-8 text-[#1A1A1A]"
-              style={{ fontSize: 'clamp(3.5rem, 7vw, 6.5rem)' }}
+              className="font-black tracking-tighter leading-[0.95] mb-6 sm:mb-8 text-[#1A1A1A]"
+              style={{ fontSize: 'clamp(2.5rem, 8vw, 6.5rem)' }}
             >
               Strategic<br />
               <span className="text-transparent" style={{ WebkitTextStroke: '2.5px #1A1A1A' }}>Services</span>
               <br />
-              <span className="flex items-center gap-4">
+              <span className="flex items-center gap-2 sm:gap-4">
                 <em
                   className="not-italic text-[#B8960C]"
                   style={{ fontFamily: 'var(--font-script)', fontWeight: 600, fontSize: '0.8em', transform: 'translateY(-10px)' }}
@@ -61,27 +61,27 @@ function ServicesHero() {
               </span>
             </h1>
 
-            <p className="text-[1.1rem] text-[#4A4A4A] leading-[1.8] max-w-[540px]">
+            <p className="text-[1rem] sm:text-[1.1rem] text-[#4A4A4A] leading-[1.8] max-w-[540px]">
               We blend traditional consultancy expertise with modern digital agility to provide a comprehensive
               suite of solutions designed for the complex global professional landscape.
             </p>
           </div>
 
-          {/* RIGHT SIDE (UPDATED WITH ANIMATED IMAGE) */}
-          <div className="reveal from-right relative hidden lg:flex justify-end items-end">
+          {/* RIGHT SIDE (RESPONSIVE IMAGE) */}
+          <div className="reveal from-right relative flex justify-center lg:justify-end items-center lg:items-end order-1 lg:order-2">
 
             {/* Glow Background */}
-            <div className="absolute inset-0 blur-3xl opacity-30"
+            <div className="absolute inset-0 blur-2xl sm:blur-3xl opacity-20 sm:opacity-30"
               style={{
                 background: 'radial-gradient(circle, rgba(184,150,12,0.3), transparent 70%)'
               }}
             />
 
             {/* Floating Image */}
-            <div className="relative w-full max-w-[600px] h-[550px] rounded-[40px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.2)] animate-float">
+            <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] h-[350px] sm:h-[450px] lg:h-[550px] rounded-[30px] lg:rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] lg:shadow-[0_30px_80px_rgba(0,0,0,0.2)] animate-float">
 
               <img
-                src="/Services.jpeg"
+                src="/Services.png"
                 alt="Services"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
               />
@@ -102,22 +102,22 @@ function ServicesHero() {
 ───────────────────────────────────────────── */
 function ContractStaffingSection() {
   return (
-    <section className="py-28 bg-[#FAF7F2]">
-      <div className="max-w-[1280px] mx-auto px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+    <section className="py-16 sm:py-20 lg:py-28 bg-[#FAF7F2]">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
 
           {/* Contract Staffing — large card spanning 2 cols */}
           <div
-            className="reveal lg:col-span-2 card-lift bg-white rounded-[40px] p-12 lg:p-14 relative overflow-hidden group"
+            className="reveal lg:col-span-2 card-lift bg-white rounded-[30px] lg:rounded-[40px] p-8 sm:p-10 lg:p-12 xl:p-14 relative overflow-hidden group"
             style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.06)' }}
           >
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] pointer-events-none opacity-[0.03] transition-transform duration-700 group-hover:scale-110"
+            <div className="absolute top-0 right-0 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] pointer-events-none opacity-[0.03] transition-transform duration-700 group-hover:scale-110"
               style={{ background: 'radial-gradient(circle, #2D5016 0%, transparent 70%)' }} />
 
             <div className="flex flex-col h-full justify-between relative z-10">
               <div>
                 <div
-                  className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-[0.7rem] font-bold uppercase tracking-[0.15em] mb-10"
+                  className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-[0.7rem] font-bold uppercase tracking-[0.15em] mb-8 sm:mb-10"
                   style={{ background: '#E8F0EA', color: '#2D5016' }}
                 >
                   <span className="w-2 h-2 rounded-full bg-[#2D5016]" />
@@ -125,23 +125,23 @@ function ContractStaffingSection() {
                 </div>
 
                 <h2
-                  className="font-black tracking-tight mb-6 text-[#1A1A1A]"
-                  style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', lineHeight: 1.1 }}
+                  className="font-black tracking-tight mb-4 sm:mb-6 text-[#1A1A1A]"
+                  style={{ fontSize: 'clamp(1.8rem, 5vw, 3.2rem)', lineHeight: 1.1 }}
                 >
                   Contract Staffing<br />Solutions
                 </h2>
 
-                <p className="text-[1.05rem] text-[#4A4A4A] leading-[1.8] mb-10 max-w-[500px]">
+                <p className="text-[0.95rem] sm:text-[1.05rem] text-[#4A4A4A] leading-[1.8] mb-8 sm:mb-10 max-w-[500px]">
                   Acquire elite talent on your terms. We provide agile staffing models that scale with your project lifecycle,
                   ensuring operational continuity with high-performance specialized teams.
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 {['✓ Vetted Expert Network', '✓ Rapid Deployment Cycles', '✓ Compliance Guaranteed'].map((f) => (
                   <div
                     key={f}
-                    className="px-5 py-2.5 rounded-full text-[0.8rem] font-bold tracking-[0.05em] text-[#1A1A1A] border border-black/10 bg-[#Fdfbf7] shadow-sm transition-colors hover:border-[#1A1A1A]"
+                    className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[0.75rem] sm:text-[0.8rem] font-bold tracking-[0.05em] text-[#1A1A1A] border border-black/10 bg-[#Fdfbf7] shadow-sm transition-colors hover:border-[#1A1A1A]"
                   >
                     {f}
                   </div>
@@ -152,36 +152,36 @@ function ContractStaffingSection() {
 
           {/* Data Transmission — compact tall card */}
           <div
-            className="reveal reveal-delay-2 card-lift rounded-[40px] p-12 flex flex-col justify-between overflow-hidden relative group"
-            style={{
-              background: 'linear-gradient(145deg, rgb(18, 42, 89) 0%, rgb(18, 42, 89) 100%)',
-              boxShadow: '0 16px 48px rgba(28,36,33,0.15)',
-              color: 'white'
-            }}
+            className="reveal reveal-delay-2 card-lift rounded-[30px] lg:rounded-[40px] p-8 sm:p-10 lg:p-12 flex flex-col justify-between overflow-hidden relative group"
+           style={{
+  background: 'linear-gradient(145deg, #1B3A2F 0%, #1B3A2F 100%)',
+  boxShadow: '0 16px 48px rgba(27, 58, 47, 0.15)',
+  color: 'white'
+}}
           >
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+')] opacity-50" />
 
             <div className="relative z-10">
               <div
-                className="w-14 h-14 rounded-[16px] flex items-center justify-center mb-8 bg-white/10 backdrop-blur-sm border border-white/10 shadow-inner"
+                className="w-12 sm:w-14 h-12 sm:h-14 rounded-[14px] sm:rounded-[16px] flex items-center justify-center mb-6 sm:mb-8 bg-white/10 backdrop-blur-sm border border-white/10 shadow-inner"
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8960C" strokeWidth="2.5">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8960C" strokeWidth="2.5" className="sm:w-6 sm:h-6">
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                 </svg>
               </div>
-              <h3 className="font-black tracking-tight text-[1.8rem] text-white mb-4 leading-snug">Data<br />Transmission</h3>
-              <p className="text-[0.95rem] text-white/70 leading-[1.8] mb-8">
+              <h3 className="font-black tracking-tight text-[1.5rem] sm:text-[1.8rem] text-white mb-3 sm:mb-4 leading-snug">Data<br />Transmission</h3>
+              <p className="text-[0.9rem] sm:text-[0.95rem] text-white/70 leading-[1.8] mb-6 sm:mb-8">
                 Secure, ultra-high-speed infrastructure for global connectivity. Robust conduits for sensitive digital assets.
               </p>
             </div>
 
-            <div className="mt-auto relative z-10 bg-black/20 p-6 rounded-[24px] border border-white/5 backdrop-blur-md">
-              <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-white/50 mb-3">
+            <div className="mt-auto relative z-10 bg-black/20 p-4 sm:p-6 rounded-[20px] lg:rounded-[24px] border border-white/5 backdrop-blur-md">
+              <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-white/50 mb-2 sm:mb-3">
                 Latency Optimization
               </p>
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-[2.8rem] font-black text-white tracking-tighter leading-none">99.9</span>
-                <span className="text-[1rem] font-bold tracking-[0.1em] text-[#B8960C]">%</span>
+              <div className="flex items-baseline gap-2 mb-2 sm:mb-3">
+                <span className="text-[2.2rem] sm:text-[2.8rem] font-black text-white tracking-tighter leading-none">99.9</span>
+                <span className="text-[0.9rem] sm:text-[1rem] font-bold tracking-[0.1em] text-[#B8960C]">%</span>
               </div>
               <div className="h-2 rounded-full bg-black/40 overflow-hidden">
                 <div className="h-full w-[99.9%] rounded-full bg-[#B8960C] shadow-[0_0_10px_#B8960C]" />
@@ -199,29 +199,29 @@ function ContractStaffingSection() {
 ───────────────────────────────────────────── */
 function EducationRealEstateSection() {
   return (
-    <section className="py-28" style={{ background: 'var(--color-cream)' }}>
-      <div className="max-w-[1280px] mx-auto px-10">
+    <section className="py-16 sm:py-20 lg:py-28" style={{ background: 'var(--color-cream)' }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
 
           {/* Real Estate — image card on left */}
           <div
-            className="reveal card-lift bg-white rounded-[40px] overflow-hidden group shadow-[0_12px_40px_rgba(0,0,0,0.06)] flex flex-col"
+            className="reveal card-lift bg-white rounded-[30px] lg:rounded-[40px] overflow-hidden group shadow-[0_12px_40px_rgba(0,0,0,0.06)] flex flex-col"
           >
-            <div className="h-[280px] overflow-hidden relative">
+            <div className="h-[240px] sm:h-[280px] overflow-hidden relative">
               <img
-                src="Architecture.jpeg"
+                src="Architecture.png"
                 alt="Real estate city skyline"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6 sm:p-8">
                 <p className="text-white text-[0.7rem] font-bold tracking-[0.2em] uppercase">Architecture</p>
               </div>
             </div>
-            <div className="p-10 flex flex-col flex-1">
-              <h3 className="font-black text-[1.6rem] tracking-tight text-[#1A1A1A] mb-4">Real Estate Consultancy</h3>
-              <p className="text-[0.95rem] text-[#7A7A7A] leading-[1.8] mb-8 flex-1">
+            <div className="p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
+              <h3 className="font-black text-[1.4rem] sm:text-[1.6rem] tracking-tight text-[#1A1A1A] mb-3 sm:mb-4">Real Estate Consultancy</h3>
+              <p className="text-[0.9rem] sm:text-[0.95rem] text-[#7A7A7A] leading-[1.8] mb-6 sm:mb-8 flex-1">
                 Navigating complex asset portfolios with market intelligence and predictive analytics, from acquisition
                 to sustainable development.
               </p>
@@ -236,25 +236,25 @@ function EducationRealEstateSection() {
 
           {/* Education & Training — center, wide */}
           <div
-            className="reveal reveal-delay-2 card-lift rounded-[40px] p-10 lg:p-12 relative overflow-hidden"
+            className="reveal reveal-delay-2 card-lift rounded-[30px] lg:rounded-[40px] p-6 sm:p-8 lg:p-10 xl:p-12 relative overflow-hidden"
             style={{ background: '#FDF6E3', boxShadow: '0 12px 40px rgba(184,150,12,0.08)' }}
           >
-            <div className="absolute -top-10 -right-10 text-[14rem] opacity-[0.05] pointer-events-none select-none">🎓</div>
+            <div className="absolute -top-8 sm:-top-10 -right-8 sm:-right-10 text-[10rem] sm:text-[14rem] opacity-[0.05] pointer-events-none select-none">🎓</div>
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-16 h-16 rounded-[18px] bg-white flex items-center justify-center text-3xl shadow-sm mb-8">
+              <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-[14px] sm:rounded-[18px] bg-white flex items-center justify-center text-2xl sm:text-3xl shadow-sm mb-6 sm:mb-8">
                 🎓
               </div>
-              <h3 className="font-black text-[2rem] tracking-tight text-[#1A1A1A] mb-6 leading-tight">Education &amp;<br />Training</h3>
-              <p className="text-[1rem] text-[#4A4A4A] leading-[1.8] mb-10">
+              <h3 className="font-black text-[1.6rem] sm:text-[2rem] tracking-tight text-[#1A1A1A] mb-4 sm:mb-6 leading-tight">Education &amp;<br />Training</h3>
+              <p className="text-[0.9rem] sm:text-[1rem] text-[#4A4A4A] leading-[1.8] mb-8 sm:mb-10">
                 Future-proofing your workforce through bespoke curriculum development and leadership workshops
                 designed for the digital-first era.
               </p>
 
-              <div className="mt-auto flex flex-wrap gap-3">
+              <div className="mt-auto flex flex-wrap gap-2 sm:gap-3">
                 {['Leadership Programs', 'Agile Methodologies', 'Digital Literacy'].map((tag) => (
                   <span
                     key={tag}
-                    className="px-4 py-2 rounded-full text-[0.75rem] font-bold tracking-[0.05em] text-[#B8960C] bg-white border border-[#B8960C]/20 shadow-[0_2px_10px_rgba(184,150,12,0.05)]"
+                    className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[0.7rem] sm:text-[0.75rem] font-bold tracking-[0.05em] text-[#B8960C] bg-white border border-[#B8960C]/20 shadow-[0_2px_10px_rgba(184,150,12,0.05)]"
                   >
                     {tag}
                   </span>
@@ -265,31 +265,31 @@ function EducationRealEstateSection() {
 
           {/* Next Session card */}
           <div
-            className="reveal reveal-delay-3 card-lift bg-white rounded-[40px] p-10 lg:p-12 flex flex-col items-center justify-center text-center shadow-[0_12px_40px_rgba(0,0,0,0.06)] border border-black/5"
+            className="reveal reveal-delay-3 card-lift bg-white rounded-[30px] lg:rounded-[40px] p-6 sm:p-8 lg:p-10 xl:p-12 flex flex-col items-center justify-center text-center shadow-[0_12px_40px_rgba(0,0,0,0.06)] border border-black/5"
           >
             <div className="w-full relative">
               {/* Background circular dashes */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border-[1.5px] border-dashed border-[#B8960C]/30 animate-[spin-slow_30s_linear_infinite]" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 sm:w-48 h-36 sm:h-48 rounded-full border-[1.5px] border-dashed border-[#B8960C]/30 animate-[spin-slow_30s_linear_infinite]" />
 
-              <div className="relative z-10 py-10">
-                <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[#7A7A7A] mb-4">
+              <div className="relative z-10 py-8 sm:py-10">
+                <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[#7A7A7A] mb-3 sm:mb-4">
                   Next Masterclass
                 </p>
                 <div
-                  className="font-black tracking-tighter text-[#1A1A1A] leading-none mb-3"
-                  style={{ fontSize: '4.5rem' }}
+                  className="font-black tracking-tighter text-[#1A1A1A] leading-none mb-2 sm:mb-3"
+                  style={{ fontSize: 'clamp(3rem, 12vw, 4.5rem)' }}
                 >
                   24
                 </div>
-                <div className="text-[1.2rem] font-black tracking-widest uppercase text-[#1A1A1A] mb-2">October</div>
-                <p className="text-[0.8rem] font-bold tracking-[0.1em] uppercase text-[#B8960C] mb-8">
+                <div className="text-[1rem] sm:text-[1.2rem] font-black tracking-widest uppercase text-[#1A1A1A] mb-1 sm:mb-2">October</div>
+                <p className="text-[0.75rem] sm:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-[#B8960C] mb-6 sm:mb-8">
                   Strategic Thinking
                 </p>
 
                 <Link
                   to="/contact"
-                  className="inline-flex w-[80%] mx-auto justify-center px-6 py-4 rounded-full bg-[#1A1A1A] text-white
-                    text-[0.8rem] font-bold uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:shadow-[0_8px_20px_rgba(184,150,12,0.25)]"
+                  className="inline-flex w-[80%] mx-auto justify-center px-5 sm:px-6 py-3 sm:py-4 rounded-full bg-[#1A1A1A] text-white
+                    text-[0.75rem] sm:text-[0.8rem] font-bold uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:shadow-[0_8px_20px_rgba(184,150,12,0.25)]"
                 >
                   Reserve Seat
                 </Link>
@@ -308,31 +308,31 @@ function EducationRealEstateSection() {
 ───────────────────────────────────────────── */
 function TrustedSection() {
   return (
-    <section className="py-32 bg-[#FAF7F2] relative overflow-hidden">
+    <section className="py-20 sm:py-24 lg:py-32 bg-[#FAF7F2] relative overflow-hidden">
       {/* Decorative background logo marks */}
-      <div className="absolute top-1/2 left-10 -translate-y-1/2 text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">F</div>
-      <div className="absolute top-1/2 right-10 -translate-y-1/2 text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">S</div>
+      <div className="absolute top-1/2 left-4 sm:left-10 -translate-y-1/2 text-[12rem] sm:text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">F</div>
+      <div className="absolute top-1/2 right-4 sm:right-10 -translate-y-1/2 text-[12rem] sm:text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">S</div>
 
-      <div className="max-w-[1000px] mx-auto px-10 text-center relative z-10">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-10 text-center relative z-10">
         <div className="reveal">
           {/* Avatar group */}
-          <div className="flex items-center justify-center mb-10">
-            <div className="flex -space-x-4 shadow-xl rounded-full p-2 bg-white/50 backdrop-blur-md border border-white">
+          <div className="flex items-center justify-center mb-8 sm:mb-10">
+            <div className="flex -space-x-3 sm:-space-x-4 shadow-xl rounded-full p-2 bg-white/50 backdrop-blur-md border border-white">
               {[
-                'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
-                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
-                'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
+                'https://img.freepik.com/free-photo/closeup-young-hispanic-man-casuals-studio_662251-600.jpg?semt=ais_hybrid&w=740&q=80',
+                'https://img.freepik.com/premium-photo/indian-man-smiling-confident-young-indian-people-standing-isolated-white-background_875825-118427.jpg?w=360',
+                'https://img.freepik.com/free-photo/indian-woman-posing-cute-stylish-outfit-camera-smiling_482257-122351.jpg?semt=ais_hybrid&w=740&q=80',
+                'https://thumbs.dreamstime.com/b/young-s-confident-indian-woman-smiling-looking-camera-young-s-confident-indian-woman-smiling-looking-camera-exuding-394618728.jpg',
               ].map((src, i) => (
                 <img
                   key={i}
                   src={src}
                   alt={`Industry leader ${i + 1}`}
-                  className="w-14 h-14 rounded-full object-cover border-[3px] border-white shadow-md relative hover:z-10 transition-transform hover:scale-110"
+                  className="w-12 sm:w-14 h-12 sm:h-14 rounded-full object-cover border-[3px] border-white shadow-md relative hover:z-10 transition-transform hover:scale-110"
                 />
               ))}
               <div
-                className="w-14 h-14 rounded-full border-[3px] border-white flex items-center justify-center text-[0.8rem] font-bold text-white relative z-10 shadow-md"
+                className="w-12 sm:w-14 h-12 sm:h-14 rounded-full border-[3px] border-white flex items-center justify-center text-[0.7rem] sm:text-[0.8rem] font-bold text-white relative z-10 shadow-md"
                 style={{ background: 'linear-gradient(135deg, #B8960C, #8A6E00)' }}
               >
                 35+
@@ -341,23 +341,23 @@ function TrustedSection() {
           </div>
 
           <h2
-            className="font-black tracking-tight mb-6 text-[#1A1A1A]"
-            style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1 }}
+            className="font-black tracking-tight mb-4 sm:mb-6 text-[#1A1A1A]"
+            style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', lineHeight: 1.1 }}
           >
             Trusted by Global<br />Industry Leaders
           </h2>
-          <p className="text-[1.1rem] text-[#7A7A7A] max-w-[600px] mx-auto mb-12 leading-[1.8]">
+          <p className="text-[1rem] sm:text-[1.1rem] text-[#7A7A7A] max-w-[600px] mx-auto mb-8 sm:mb-12 leading-[1.8]">
             Join the network of forward-thinking enterprises leveraging Focus Solutions for mission-critical
             infrastructure, staffing, and strategic management.
           </p>
 
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#1A1A1A] text-white
-              font-bold text-[0.85rem] uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:scale-105 hover:shadow-[0_16px_40px_rgba(184,150,12,0.3)]"
+            className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 py-4 sm:py-5 rounded-full bg-[#1A1A1A] text-white
+              font-bold text-[0.8rem] sm:text-[0.85rem] uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:scale-105 hover:shadow-[0_16px_40px_rgba(184,150,12,0.3)]"
           >
             Consult Our Experts
-            <span className="bg-white/20 p-1.5 rounded-full"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+            <span className="bg-white/20 p-1.5 rounded-full"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" className="sm:w-4 sm:h-4"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
           </Link>
         </div>
       </div>

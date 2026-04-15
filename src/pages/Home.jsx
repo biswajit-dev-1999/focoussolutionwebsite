@@ -12,10 +12,10 @@ const SERVICES = [
     id: 'structural',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="3" y="3" width="7" height="7" rx="1"/>
-        <rect x="14" y="3" width="7" height="7" rx="1"/>
-        <rect x="3" y="14" width="7" height="7" rx="1"/>
-        <rect x="14" y="14" width="7" height="7" rx="1"/>
+        <rect x="3" y="3" width="7" height="7" rx="1" />
+        <rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <rect x="14" y="14" width="7" height="7" rx="1" />
       </svg>
     ),
     gold: true,
@@ -26,8 +26,8 @@ const SERVICES = [
     id: 'system',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 2v3m0 14v3M2 12h3m14 0h3M5.6 5.6l2 2m8.8 8.8 2 2M5.6 18.4l2-2m8.8-8.8 2-2"/>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 2v3m0 14v3M2 12h3m14 0h3M5.6 5.6l2 2m8.8 8.8 2 2M5.6 18.4l2-2m8.8-8.8 2-2" />
       </svg>
     ),
     gold: false,
@@ -38,8 +38,8 @@ const SERVICES = [
     id: 'growth',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
-        <polyline points="16 7 22 7 22 13"/>
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+        <polyline points="16 7 22 7 22 13" />
       </svg>
     ),
     gold: true,
@@ -50,8 +50,8 @@ const SERVICES = [
     id: 'compliance',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <path d="m9 12 2 2 4-4"/>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 12 2 2 4-4" />
       </svg>
     ),
     gold: false,
@@ -64,8 +64,8 @@ const ADVANTAGES = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="m9 12 2 2 4-4"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="m9 12 2 2 4-4" />
       </svg>
     ),
     title: 'Bespoke Methodology',
@@ -74,8 +74,8 @@ const ADVANTAGES = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-        <circle cx="12" cy="10" r="3"/>
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
       </svg>
     ),
     title: 'Sustainable Impact',
@@ -84,9 +84,9 @@ const ADVANTAGES = [
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-        <circle cx="9" cy="7" r="4"/>
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
     title: 'Collaborative Spirit',
@@ -100,26 +100,26 @@ const PORTFOLIO = [
     label: 'Urban Infrastructure',
     title: 'The Meridian Center',
     desc: 'Comprehensive project management for a mixed-use commercial development.',
-    img: '/Infrastructure.jpeg',
+    img: '/Infrastructure.png',
     large: true,
   },
   {
     id: 'nexus',
     label: 'Digital Excellence',
     title: 'Nexus Cloud Hub',
-    img: '/Excellence.jpeg',
+    img: '/Excellence.png',
   },
   {
     id: 'vision',
     label: 'Strategic Planning',
     title: 'Vision 2031',
-    img: '/Planning.jpeg',
+    img: '/Planning.png',
   },
   {
     id: 'green',
     label: 'Real Estate',
     title: 'Green Horizon Estates',
-    img: 'Estates.jpeg',
+    img: 'Estates.png',
     wide: true,
   },
 ]
@@ -281,7 +281,7 @@ function HeroSection() {
                     transition-transform duration-300 group-hover:translate-x-0.5"
                 >
                   <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
               </Link>
@@ -300,7 +300,7 @@ function HeroSection() {
             {/* Stats row */}
             <div className="reveal flex items-center gap-0">
               {[
-                { num: '15', suffix: '+', label: 'Years', sub: 'of Excellence' },
+                { num: '4', suffix: '+', label: 'Years', sub: 'of Excellence' },
                 { num: '150', suffix: '+', label: 'Clients', sub: 'Served' },
                 { num: '98', suffix: '%', label: 'Client', sub: 'Satisfaction' },
               ].map(({ num, suffix, label, sub }, i) => (
@@ -341,7 +341,7 @@ function HeroSection() {
               }}
             >
               <img
-                src="/Headquaters.jpeg"
+                src="/Headquaters.png"
                 alt="Modern premium office interior — Focus Solutions"
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -407,9 +407,9 @@ function HeroSection() {
               <div className="flex items-center gap-2.5">
                 <div className="flex -space-x-2">
                   {[
-                    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&q=80',
-                    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&q=80',
-                    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&q=80',
+                    'https://www.shutterstock.com/image-photo/cheerful-confident-handsome-indian-business-260nw-2695542215.jpg',
+                    'https://cdn.prod.website-files.com/662877ddc094773994f13cc6/68709f9e0af5fb0edfd7a631_Group%201000004984.png',
+                    'https://www.shutterstock.com/image-photo/closeup-portrait-young-smiling-hispanic-260nw-2327799157.jpg',
                   ].map((src, i) => (
                     <img key={i} src={src} alt="" className="w-7 h-7 rounded-full object-cover border-2 border-white" />
                   ))}
@@ -461,13 +461,13 @@ function HeroSection() {
             <span key={repeat} className="flex items-center shrink-0">
               {['Strategic Consulting', 'ZED Certification', 'Contract Staffing', 'Infrastructure Projects',
                 'Regulatory Compliance', 'Education & Training', 'Real Estate Advisory', 'ISO Certified'].map((item, i) => (
-                <span key={i} className="flex items-center">
-                  <span className="text-[0.78rem] font-semibold text-[#4A4A4A] tracking-[0.06em] uppercase px-6">
-                    {item}
+                  <span key={i} className="flex items-center">
+                    <span className="text-[0.78rem] font-semibold text-[#4A4A4A] tracking-[0.06em] uppercase px-6">
+                      {item}
+                    </span>
+                    <span className="text-[#B8960C] text-[0.6rem]">◆</span>
                   </span>
-                  <span className="text-[#B8960C] text-[0.6rem]">◆</span>
-                </span>
-              ))}
+                ))}
             </span>
           ))}
         </div>
@@ -568,7 +568,7 @@ function AdvantageSection() {
           <div className="reveal from-left relative">
             <div className="img-zoom rounded-[48px] overflow-hidden" style={{ height: '520px' }}>
               <img
-                src="/Leaders.jpeg"
+                src="/Leaders.png"
                 alt="Focus Solutions team collaboration"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -633,7 +633,7 @@ function AdvantageSection() {
             </div>
 
             <p className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-[#7A7A7A] mb-5">
-               <strong className="text-[#1A1A1A]"></strong>
+              <strong className="text-[#1A1A1A]"></strong>
             </p>
             <Link
               to="/about"
@@ -738,15 +738,17 @@ function CTASection() {
   return (
     <section
       className="py-20 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #1C2421 0%, #2A3D2D 100%)' }}
+      style={{
+        background: 'linear-gradient(135deg, #4A5F29 0%, #556B2F 100%)'
+      }}
       id="cta"
     >
       {/* Radial glow */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ 
-          background: 'linear-gradient(135deg, rgb(18, 42, 89) 0%, rgba(18, 42, 89, 0.8) 50%, rgba(18, 42, 89, 0.6) 100%)'
-        }}
+       style={{
+  background: 'linear-gradient(135deg, #1B3A2F 0%, rgba(27, 58, 47, 0.8) 50%, rgba(27, 58, 47, 0.6) 100%)'
+}}
       />
 
       <div className="max-w-6xl mx-auto px-5 md:px-10">

@@ -5,11 +5,11 @@ import { Link, useLocation } from 'react-router-dom'
 
 // Navigation links configuration
 const NAV_LINKS = [
-  { label: 'Home',     to: '/' },
-  { label: 'About',    to: '/about' },
+  { label: 'Home', to: '/' },
+  { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
   { label: 'Projects', to: '/projects' },
-  { label: 'Contact',  to: '/contact' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Navbar() {
@@ -39,16 +39,16 @@ export default function Navbar() {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="max-w-[1280px] mx-auto px-10 flex items-center justify-between">
+      <div className="max-w-[1250px] mx-auto px-10 flex items-center justify-between">
 
-{/* Logo */}
-<Link to="/" className="flex items-center gap-3 group">
-  <img 
-    src="/logo101.png" 
-    alt="Focus Solutions Logo" 
-    className="h-16 md:h-18 w-auto object-contain rounded-full bg-white p-1 shadow-sm transition-transform duration-300 group-hover:scale-105"
-  />
-</Link>
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-3 group">
+          <img
+            src="/logo101.png"
+            alt="Focus Solutions Logo"
+            className="h-16 md:h-18 w-auto object-contain rounded-full bg-white p-1 shadow-sm transition-transform duration-300 group-hover:scale-105"
+          />
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-10">
@@ -73,13 +73,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTA Button */}
-        <Link
-          to="/contact"
-          className="hidden md:inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#1A1A1A] text-white text-[0.75rem] font-bold uppercase tracking-[0.12em]
-            transition-all duration-300 hover:bg-[#B8960C] hover:-translate-y-0.5 hover:shadow-[0_12px_24px_rgba(184,150,12,0.25)]"
-        >
-          Let's Talk
-        </Link>
+
 
         {/* Hamburger Menu (Mobile) */}
         <button
@@ -113,9 +107,8 @@ export default function Navbar() {
             <Link
               key={to}
               to={to}
-              className={`text-[1.2rem] font-black tracking-tight ${
-                location.pathname === to ? 'text-[#B8960C]' : 'text-[#1A1A1A]'
-              }`}
+              className={`text-[1.2rem] font-black tracking-tight ${location.pathname === to ? 'text-[#B8960C]' : 'text-[#1A1A1A]'
+                }`}
             >
               {label}
             </Link>

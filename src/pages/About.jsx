@@ -156,7 +156,15 @@ function FounderLegalSection() {
             <blockquote className="text-base sm:text-[1.1rem] text-[#4A4A4A] leading-relaxed italic border-l-[3px] border-[#B8960C] pl-6 sm:pl-8">
               "Focus is not just about looking ahead, but about refining the clarity of our current actions to define a better tomorrow."
             </blockquote>
+              <div className="mt-10 text-right pr-6 opacity-40 select-none pointer-events-none"
+
+              style={{ fontFamily: 'var(--font-script)', fontSize: '2.5rem', transform: 'rotate(-3deg)' }}>
+
+              PK Mukherjee
+
+            </div>
           </div>
+          
 
           {/* Legal Card */}
           <div className="reveal bg-[#556B2F] rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 text-white relative overflow-hidden shadow-xl shadow-[#556b2f]/10">

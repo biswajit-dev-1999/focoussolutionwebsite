@@ -164,7 +164,7 @@ function FostacAirtelSection() {
 
           {/* Center: image */}
           <div className="reveal reveal-delay-2 relative rounded-[30px] lg:rounded-[40px] overflow-hidden img-zoom shadow-[0_12px_40px_rgba(0,0,0,0.08)]"
-            style={{ minHeight: '300px', maxHeight: '400px' }}>
+           >
             <img
               src="/Fostac.png"
               alt="FOSTAC food safety project"
@@ -378,7 +378,7 @@ function SalassSection() {
             </div>
 
             {/* Right: image */}
-            <div className="img-zoom relative" style={{ minHeight: '400px', maxHeight: '500px' }}>
+            <div className="img-zoom relative" >
               <img
                 src="Luxury.png"
                 alt="Real Estate luxury building"

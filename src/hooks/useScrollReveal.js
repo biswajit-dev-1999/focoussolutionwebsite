@@ -7,6 +7,9 @@ import { useEffect } from 'react'
  * and adds `.visible` when they enter the viewport.
  * Call once per page/component mount.
  */
+
+
+
 export function useScrollReveal() {
   useEffect(() => {
     const elements = document.querySelectorAll('.reveal')

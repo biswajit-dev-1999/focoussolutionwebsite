@@ -1,5 +1,5 @@
 // src/pages/Services.jsx
-// SERVICES PAGE — Premium Layout Redesign
+// SERVICES PAGE — Premium Blue & White Redesign
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -9,7 +9,7 @@ export default function Services() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
-    <main>
+    <main className="bg-white">
       <ServicesHero />
       <ContractStaffingSection />
       <EducationRealEstateSection />
@@ -23,37 +23,37 @@ export default function Services() {
 ───────────────────────────────────────────── */
 function ServicesHero() {
   return (
-    <section className="relative min-h-[85vh] flex flex-col justify-center overflow-hidden" style={{ background: 'var(--color-cream)' }}>
+    <section className="relative min-h-[85vh] flex flex-col justify-center overflow-hidden bg-white">
 
-      {/* Background decorations */}
-      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] pointer-events-none opacity-50"
-        style={{ background: 'radial-gradient(circle, rgba(184,150,12,0.12) 0%, transparent 65%)' }} />
-      <div className="absolute top-[30%] -right-20 w-[400px] h-[400px] pointer-events-none opacity-40"
-        style={{ background: 'radial-gradient(circle, rgba(45,80,22,0.1) 0%, transparent 65%)' }} />
+      {/* Background decorations - subtle blue glows */}
+      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] pointer-events-none opacity-40"
+        style={{ background: 'radial-gradient(circle, rgba(0,123,255,0.08) 0%, transparent 65%)' }} />
+      <div className="absolute top-[30%] -right-20 w-[400px] h-[400px] pointer-events-none opacity-30"
+        style={{ background: 'radial-gradient(circle, rgba(0,45,98,0.05) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 w-full pt-20 sm:pt-32 lg:pt-40 pb-12 sm:pb-16 lg:pb-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 sm:gap-12 lg:gap-24 items-center lg:items-end">
 
           {/* LEFT SIDE */}
           <div className="reveal from-left order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#B8960C]/20 bg-[#FDF6E3] mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#B8960C] animate-pulse" />
-              <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-[#B8960C]">
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#007BFF]/20 bg-[#F0F7FF] mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#007BFF] animate-pulse" />
+              <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-[#002D62]">
                 Precision in Execution
               </p>
             </div>
 
             <h1
-              className="font-black tracking-tighter leading-[0.95] mb-6 sm:mb-8 text-[#1A1A1A]"
+              className="font-black tracking-tighter leading-[0.95] mb-6 sm:mb-8 text-[#002D62]"
               style={{ fontSize: 'clamp(2.5rem, 8vw, 6.5rem)' }}
             >
               Strategic<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '2.5px #1A1A1A' }}>Services</span>
+              <span className="text-transparent" style={{ WebkitTextStroke: '2px #002D62' }}>Services</span>
               <br />
               <span className="flex items-center gap-2 sm:gap-4">
                 <em
-                  className="not-italic text-[#B8960C]"
-                  style={{ fontFamily: 'var(--font-script)', fontWeight: 600, fontSize: '0.8em', transform: 'translateY(-10px)' }}
+                  className="not-italic text-[#007BFF]"
+                  style={{ fontFamily: 'var(--font-script)', fontWeight: 600, fontSize: '0.8em', transform: 'translateY(-5px)' }}
                 >
                   tailored
                 </em>
@@ -61,34 +61,25 @@ function ServicesHero() {
               </span>
             </h1>
 
-            <p className="text-[1rem] sm:text-[1.1rem] text-[#4A4A4A] leading-[1.8] max-w-[540px]">
+            <p className="text-[1rem] sm:text-[1.1rem] text-[#556677] leading-[1.8] max-w-[540px]">
               We blend traditional consultancy expertise with modern digital agility to provide a comprehensive
               suite of solutions designed for the complex global professional landscape.
             </p>
           </div>
 
-          {/* RIGHT SIDE (RESPONSIVE IMAGE) */}
+          {/* RIGHT SIDE (IMAGE) */}
           <div className="reveal from-right relative flex justify-center lg:justify-end items-center lg:items-end order-1 lg:order-2">
+            <div className="absolute inset-0 blur-3xl opacity-30"
+              style={{ background: 'radial-gradient(circle, #007BFF, transparent 70%)' }} />
 
-            {/* Glow Background */}
-            <div className="absolute inset-0 blur-2xl sm:blur-3xl opacity-20 sm:opacity-30"
-              style={{
-                background: 'radial-gradient(circle, rgba(184,150,12,0.3), transparent 70%)'
-              }}
-            />
-
-            {/* Floating Image */}
-            <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] h-[350px] sm:h-[450px] lg:h-[550px] rounded-[30px] lg:rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] lg:shadow-[0_30px_80px_rgba(0,0,0,0.2)] animate-float">
-
+            <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] h-[350px] sm:h-[450px] lg:h-[550px] rounded-[30px] lg:rounded-[40px] overflow-hidden shadow-[0_30px_80px_rgba(0,45,98,0.15)] animate-float">
               <img
-                src="/Services.png"
+                src="/Services.webp"
                 alt="Services"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                className="w-full h-full object-cover"
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#002D62]/40 to-transparent" />
             </div>
-
           </div>
 
         </div>
@@ -102,46 +93,45 @@ function ServicesHero() {
 ───────────────────────────────────────────── */
 function ContractStaffingSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-28 bg-[#FAF7F2]">
+    <section className="py-16 sm:py-20 lg:py-28 bg-[#F8FAFC]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
 
-          {/* Contract Staffing — large card spanning 2 cols */}
+          {/* Contract Staffing */}
           <div
             className="reveal lg:col-span-2 card-lift bg-white rounded-[30px] lg:rounded-[40px] p-8 sm:p-10 lg:p-12 xl:p-14 relative overflow-hidden group"
-            style={{ boxShadow: '0 16px 48px rgba(0,0,0,0.06)' }}
+            style={{ boxShadow: '0 16px 48px rgba(0,45,98,0.06)' }}
           >
-            <div className="absolute top-0 right-0 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] pointer-events-none opacity-[0.03] transition-transform duration-700 group-hover:scale-110"
-              style={{ background: 'radial-gradient(circle, #2D5016 0%, transparent 70%)' }} />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] pointer-events-none opacity-[0.03] bg-[#007BFF] rounded-full blur-3xl" />
 
             <div className="flex flex-col h-full justify-between relative z-10">
               <div>
                 <div
-                  className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-[0.7rem] font-bold uppercase tracking-[0.15em] mb-8 sm:mb-10"
-                  style={{ background: '#E8F0EA', color: '#2D5016' }}
+                  className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-[0.7rem] font-bold uppercase tracking-[0.15em] mb-8"
+                  style={{ background: '#F0F7FF', color: '#007BFF' }}
                 >
-                  <span className="w-2 h-2 rounded-full bg-[#2D5016]" />
+                  <span className="w-2 h-2 rounded-full bg-[#007BFF]" />
                   Human Capital
                 </div>
 
                 <h2
-                  className="font-black tracking-tight mb-4 sm:mb-6 text-[#1A1A1A]"
+                  className="font-black tracking-tight mb-4 sm:mb-6 text-[#002D62]"
                   style={{ fontSize: 'clamp(1.8rem, 5vw, 3.2rem)', lineHeight: 1.1 }}
                 >
                   Contract Staffing<br />Solutions
                 </h2>
 
-                <p className="text-[0.95rem] sm:text-[1.05rem] text-[#4A4A4A] leading-[1.8] mb-8 sm:mb-10 max-w-[500px]">
+                <p className="text-[0.95rem] sm:text-[1.05rem] text-[#556677] leading-[1.8] mb-8 max-w-[500px]">
                   Acquire elite talent on your terms. We provide agile staffing models that scale with your project lifecycle,
-                  ensuring operational continuity with high-performance specialized teams.
+                  ensuring operational continuity.
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-3 sm:gap-4">
-                {['✓ Vetted Expert Network', '✓ Rapid Deployment Cycles', '✓ Compliance Guaranteed'].map((f) => (
+              <div className="flex flex-wrap gap-3">
+                {['✓ Vetted Experts', '✓ Rapid Deployment', '✓ Compliance Guaranteed'].map((f) => (
                   <div
                     key={f}
-                    className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[0.75rem] sm:text-[0.8rem] font-bold tracking-[0.05em] text-[#1A1A1A] border border-black/10 bg-[#Fdfbf7] shadow-sm transition-colors hover:border-[#1A1A1A]"
+                    className="px-5 py-2.5 rounded-full text-[0.8rem] font-bold text-[#002D62] border border-[#002D62]/10 bg-white shadow-sm transition-all hover:border-[#007BFF]"
                   >
                     {f}
                   </div>
@@ -150,41 +140,33 @@ function ContractStaffingSection() {
             </div>
           </div>
 
-          {/* Data Transmission — compact tall card */}
+          {/* Data Transmission — Blue Gradient Card */}
           <div
-            className="reveal reveal-delay-2 card-lift rounded-[30px] lg:rounded-[40px] p-8 sm:p-10 lg:p-12 flex flex-col justify-between overflow-hidden relative group"
-           style={{
-  background: 'linear-gradient(145deg, #1B3A2F 0%, #1B3A2F 100%)',
-  boxShadow: '0 16px 48px rgba(27, 58, 47, 0.15)',
-  color: 'white'
-}}
+            className="reveal reveal-delay-2 card-lift rounded-[30px] lg:rounded-[40px] p-8 sm:p-10 flex flex-col justify-between overflow-hidden relative"
+            style={{
+              background: 'linear-gradient(145deg, #002D62 0%, #001A3A 100%)',
+              boxShadow: '0 20px 50px rgba(0,45,98,0.2)'
+            }}
           >
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+')] opacity-50" />
-
             <div className="relative z-10">
-              <div
-                className="w-12 sm:w-14 h-12 sm:h-14 rounded-[14px] sm:rounded-[16px] flex items-center justify-center mb-6 sm:mb-8 bg-white/10 backdrop-blur-sm border border-white/10 shadow-inner"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8960C" strokeWidth="2.5" className="sm:w-6 sm:h-6">
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-white/10 backdrop-blur-md border border-white/20">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#007BFF" strokeWidth="2.5">
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                 </svg>
               </div>
-              <h3 className="font-black tracking-tight text-[1.5rem] sm:text-[1.8rem] text-white mb-3 sm:mb-4 leading-snug">Data<br />Transmission</h3>
-              <p className="text-[0.9rem] sm:text-[0.95rem] text-white/70 leading-[1.8] mb-6 sm:mb-8">
-                Secure, ultra-high-speed infrastructure for global connectivity. Robust conduits for sensitive digital assets.
+              <h3 className="font-black text-[1.8rem] text-white mb-4 leading-tight">Data<br />Transmission</h3>
+              <p className="text-white/70 text-[0.95rem] leading-[1.7]">
+                Secure infrastructure for global connectivity and sensitive digital assets.
               </p>
             </div>
 
-            <div className="mt-auto relative z-10 bg-black/20 p-4 sm:p-6 rounded-[20px] lg:rounded-[24px] border border-white/5 backdrop-blur-md">
-              <p className="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-white/50 mb-2 sm:mb-3">
-                Latency Optimization
-              </p>
-              <div className="flex items-baseline gap-2 mb-2 sm:mb-3">
-                <span className="text-[2.2rem] sm:text-[2.8rem] font-black text-white tracking-tighter leading-none">99.9</span>
-                <span className="text-[0.9rem] sm:text-[1rem] font-bold tracking-[0.1em] text-[#B8960C]">%</span>
+            <div className="mt-8 bg-black/20 p-6 rounded-[24px] border border-white/10">
+              <div className="flex items-baseline gap-2 mb-2">
+                <span className="text-[2.8rem] font-black text-white leading-none">99.9</span>
+                <span className="text-sm font-bold text-[#007BFF]">%</span>
               </div>
-              <div className="h-2 rounded-full bg-black/40 overflow-hidden">
-                <div className="h-full w-[99.9%] rounded-full bg-[#B8960C] shadow-[0_0_10px_#B8960C]" />
+              <div className="h-1.5 rounded-full bg-white/10">
+                <div className="h-full w-[99.9%] bg-[#007BFF] shadow-[0_0_15px_#007BFF]" />
               </div>
             </div>
           </div>
@@ -195,107 +177,47 @@ function ContractStaffingSection() {
 }
 
 /* ─────────────────────────────────────────────
-   EDUCATION + REAL ESTATE SECTION
+   EDUCATION + REAL ESTATE
 ───────────────────────────────────────────── */
 function EducationRealEstateSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-28" style={{ background: 'var(--color-cream)' }}>
+    <section className="py-16 sm:py-20 lg:py-28 bg-white">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
-
-          {/* Real Estate — image card on left */}
-          <div
-            className="reveal card-lift bg-white rounded-[30px] lg:rounded-[40px] overflow-hidden group shadow-[0_12px_40px_rgba(0,0,0,0.06)] flex flex-col"
-          >
-            <div className="h-[240px] sm:h-[280px] overflow-hidden relative">
-              <img
-                src="Architecture.png"
-                alt="Real estate city skyline"
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6 sm:p-8">
-                <p className="text-white text-[0.7rem] font-bold tracking-[0.2em] uppercase">Architecture</p>
+          {/* Real Estate */}
+          <div className="reveal card-lift bg-white rounded-[30px] overflow-hidden group border border-[#002D62]/5 shadow-xl">
+            <div className="h-[280px] overflow-hidden relative">
+              <img src="Architecture.webp" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#002D62]/80 to-transparent flex items-end p-8">
+                <p className="text-white text-[0.7rem] font-bold tracking-widest uppercase">Architecture</p>
               </div>
             </div>
-            <div className="p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
-              <h3 className="font-black text-[1.4rem] sm:text-[1.6rem] tracking-tight text-[#1A1A1A] mb-3 sm:mb-4">Real Estate Consultancy</h3>
-              <p className="text-[0.9rem] sm:text-[0.95rem] text-[#7A7A7A] leading-[1.8] mb-6 sm:mb-8 flex-1">
-                Navigating complex asset portfolios with market intelligence and predictive analytics, from acquisition
-                to sustainable development.
-              </p>
-              <a
-                href="#"
-                className="text-[0.8rem] font-bold tracking-[0.1em] uppercase text-[#B8960C] inline-flex items-center gap-2 hover:gap-3 transition-all mt-auto"
-              >
-                View Portfolio <span className="text-[1.2rem] leading-none">→</span>
-              </a>
+            <div className="p-8">
+              <h3 className="font-black text-[1.6rem] text-[#002D62] mb-4">Real Estate</h3>
+              <p className="text-[#556677] text-[0.95rem] mb-6">Navigating portfolios with market intelligence and sustainable development strategies.</p>
+              <Link to="#" className="text-[#007BFF] font-bold uppercase text-[0.8rem] flex items-center gap-2">View Portfolio →</Link>
             </div>
           </div>
 
-          {/* Education & Training — center, wide */}
-          <div
-            className="reveal reveal-delay-2 card-lift rounded-[30px] lg:rounded-[40px] p-6 sm:p-8 lg:p-10 xl:p-12 relative overflow-hidden"
-            style={{ background: '#FDF6E3', boxShadow: '0 12px 40px rgba(184,150,12,0.08)' }}
-          >
-            <div className="absolute -top-8 sm:-top-10 -right-8 sm:-right-10 text-[10rem] sm:text-[14rem] opacity-[0.05] pointer-events-none select-none">🎓</div>
-            <div className="relative z-10 flex flex-col h-full">
-              <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-[14px] sm:rounded-[18px] bg-white flex items-center justify-center text-2xl sm:text-3xl shadow-sm mb-6 sm:mb-8">
-                🎓
-              </div>
-              <h3 className="font-black text-[1.6rem] sm:text-[2rem] tracking-tight text-[#1A1A1A] mb-4 sm:mb-6 leading-tight">Education &amp;<br />Training</h3>
-              <p className="text-[0.9rem] sm:text-[1rem] text-[#4A4A4A] leading-[1.8] mb-8 sm:mb-10">
-                Future-proofing your workforce through bespoke curriculum development and leadership workshops
-                designed for the digital-first era.
-              </p>
-
-              <div className="mt-auto flex flex-wrap gap-2 sm:gap-3">
-                {['Leadership Programs', 'Agile Methodologies', 'Digital Literacy'].map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[0.7rem] sm:text-[0.75rem] font-bold tracking-[0.05em] text-[#B8960C] bg-white border border-[#B8960C]/20 shadow-[0_2px_10px_rgba(184,150,12,0.05)]"
-                  >
-                    {tag}
+          {/* Education - Ice Blue Card */}
+          <div className="reveal reveal-delay-2 card-lift rounded-[30px] p-10 relative overflow-hidden bg-[#F0F7FF] border border-[#007BFF]/10">
+             <div className="relative z-10">
+              <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-3xl shadow-sm mb-8">🎓</div>
+              <h3 className="font-black text-[2rem] text-[#002D62] mb-4">Education & Training</h3>
+              <p className="text-[#556677] mb-8">Bespoke curriculum development for the digital-first era.</p>
+              <div className="flex flex-wrap gap-2">
+                {['Leadership', 'Agile', 'Digital'].map(t => (
+                  <span key={t} className="px-3 py-1.5 rounded-full text-[0.7rem] font-bold bg-white text-[#007BFF] border border-[#007BFF]/10">
+                    {t}
                   </span>
                 ))}
               </div>
-            </div>
+             </div>
           </div>
 
-          {/* Next Session card */}
-          <div
-            className="reveal reveal-delay-3 card-lift bg-white rounded-[30px] lg:rounded-[40px] p-6 sm:p-8 lg:p-10 xl:p-12 flex flex-col items-center justify-center text-center shadow-[0_12px_40px_rgba(0,0,0,0.06)] border border-black/5"
-          >
-            <div className="w-full relative">
-              {/* Background circular dashes */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 sm:w-48 h-36 sm:h-48 rounded-full border-[1.5px] border-dashed border-[#B8960C]/30 animate-[spin-slow_30s_linear_infinite]" />
-
-              <div className="relative z-10 py-8 sm:py-10">
-                <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[#7A7A7A] mb-3 sm:mb-4">
-                  Next Masterclass
-                </p>
-                <div
-                  className="font-black tracking-tighter text-[#1A1A1A] leading-none mb-2 sm:mb-3"
-                  style={{ fontSize: 'clamp(3rem, 12vw, 4.5rem)' }}
-                >
-                  24
-                </div>
-                <div className="text-[1rem] sm:text-[1.2rem] font-black tracking-widest uppercase text-[#1A1A1A] mb-1 sm:mb-2">October</div>
-                <p className="text-[0.75rem] sm:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-[#B8960C] mb-6 sm:mb-8">
-                  Strategic Thinking
-                </p>
-
-                <Link
-                  to="/contact"
-                  className="inline-flex w-[80%] mx-auto justify-center px-5 sm:px-6 py-3 sm:py-4 rounded-full bg-[#1A1A1A] text-white
-                    text-[0.75rem] sm:text-[0.8rem] font-bold uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:shadow-[0_8px_20px_rgba(184,150,12,0.25)]"
-                >
-                  Reserve Seat
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* Next Session */}
+         
 
         </div>
       </div>
@@ -304,60 +226,25 @@ function EducationRealEstateSection() {
 }
 
 /* ─────────────────────────────────────────────
-   TRUSTED SECTION (CTA)
+   TRUSTED SECTION (BLUE CTA)
 ───────────────────────────────────────────── */
 function TrustedSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-[#FAF7F2] relative overflow-hidden">
-      {/* Decorative background logo marks */}
-      <div className="absolute top-1/2 left-4 sm:left-10 -translate-y-1/2 text-[12rem] sm:text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">F</div>
-      <div className="absolute top-1/2 right-4 sm:right-10 -translate-y-1/2 text-[12rem] sm:text-[20rem] opacity-[0.02] font-black select-none pointer-events-none">S</div>
-
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-10 text-center relative z-10">
+    <section className="py-24 bg-[#F8FAFC] relative overflow-hidden text-center">
+      <div className="max-w-[800px] mx-auto px-4 relative z-10">
         <div className="reveal">
-          {/* Avatar group */}
-          <div className="flex items-center justify-center mb-8 sm:mb-10">
-            <div className="flex -space-x-3 sm:-space-x-4 shadow-xl rounded-full p-2 bg-white/50 backdrop-blur-md border border-white">
-              {[
-                'https://img.freepik.com/free-photo/closeup-young-hispanic-man-casuals-studio_662251-600.jpg?semt=ais_hybrid&w=740&q=80',
-                'https://img.freepik.com/premium-photo/indian-man-smiling-confident-young-indian-people-standing-isolated-white-background_875825-118427.jpg?w=360',
-                'https://img.freepik.com/free-photo/indian-woman-posing-cute-stylish-outfit-camera-smiling_482257-122351.jpg?semt=ais_hybrid&w=740&q=80',
-                'https://thumbs.dreamstime.com/b/young-s-confident-indian-woman-smiling-looking-camera-young-s-confident-indian-woman-smiling-looking-camera-exuding-394618728.jpg',
-              ].map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt={`Industry leader ${i + 1}`}
-                  className="w-12 sm:w-14 h-12 sm:h-14 rounded-full object-cover border-[3px] border-white shadow-md relative hover:z-10 transition-transform hover:scale-110"
-                />
-              ))}
-              <div
-                className="w-12 sm:w-14 h-12 sm:h-14 rounded-full border-[3px] border-white flex items-center justify-center text-[0.7rem] sm:text-[0.8rem] font-bold text-white relative z-10 shadow-md"
-                style={{ background: 'linear-gradient(135deg, #B8960C, #8A6E00)' }}
-              >
-                35+
-              </div>
-            </div>
-          </div>
-
-          <h2
-            className="font-black tracking-tight mb-4 sm:mb-6 text-[#1A1A1A]"
-            style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', lineHeight: 1.1 }}
-          >
-            Trusted by Global<br />Industry Leaders
+          <h2 className="text-[#002D62] font-black tracking-tight mb-6" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', lineHeight: 1.1 }}>
+            Trusted by Global Industry Leaders
           </h2>
-          <p className="text-[1rem] sm:text-[1.1rem] text-[#7A7A7A] max-w-[600px] mx-auto mb-8 sm:mb-12 leading-[1.8]">
-            Join the network of forward-thinking enterprises leveraging Focus Solutions for mission-critical
-            infrastructure, staffing, and strategic management.
+          <p className="text-[#556677] text-[1.1rem] mb-12 max-w-[600px] mx-auto">
+            Join the network of forward-thinking enterprises leveraging Focus Solutions for mission-critical infrastructure.
           </p>
-
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 py-4 sm:py-5 rounded-full bg-[#1A1A1A] text-white
-              font-bold text-[0.8rem] sm:text-[0.85rem] uppercase tracking-[0.1em] transition-all duration-300 hover:bg-[#B8960C] hover:scale-105 hover:shadow-[0_16px_40px_rgba(184,150,12,0.3)]"
+            className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#002D62] text-white font-bold uppercase tracking-widest hover:bg-[#007BFF] transition-all transform hover:scale-105 shadow-xl shadow-blue-900/20"
           >
             Consult Our Experts
-            <span className="bg-white/20 p-1.5 rounded-full"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" className="sm:w-4 sm:h-4"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </Link>
         </div>
       </div>

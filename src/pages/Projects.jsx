@@ -13,6 +13,7 @@ export default function Projects() {
       <ProjectsHero />
       <FostacAirtelSection />
       <EducationZedSection />
+      <DataEntryGSTSection/>
       <SalassSection />
       <ProjectsCTA />
     </main>
@@ -100,7 +101,7 @@ function FostacAirtelSection() {
                 <span className="text-[0.65rem] font-bold tracking-widest uppercase text-[#556677]">Regulatory Impact</span>
               </div>
               <h2 className="font-black text-3xl text-[#002D62] mb-5">FOSTAC (FSSAI)</h2>
-              <p className="text-[#556677] leading-relaxed mb-8">Implementing national food safety training protocols, ensuring global standards for consumer health.</p>
+              <p className="text-[#556677] leading-relaxed mb-8">This project is an initiative associated with Food Safety and Standards Authority of India. Mr. Mukherjee has been appointed as the authorized representative by the empanelled agency/organization for the states of Odisha and West Bengal, ensuring effective coordination and implementation of the project activities.</p>
             </div>
             <Link to="#" className="text-sm font-bold uppercase text-[#007BFF] flex items-center gap-2 hover:gap-4 transition-all">
               View Case Study <span>→</span>
@@ -152,7 +153,8 @@ function EducationZedSection() {
             <div className="mt-auto">
               <span className="inline-block px-4 py-1.5 rounded-full text-[0.6rem] font-bold bg-[#F0F7FF] text-[#007BFF] uppercase mb-4">✓ Standard Achieved</span>
               <h3 className="font-black text-2xl text-[#002D62] mb-3">ZED Certification</h3>
-              <p className="text-sm text-[#556677]">Facilitating Zero Defect, Zero Effect manufacturing excellence for national industrial growth.</p>
+              <p className="text-sm text-[#556677]"> This project is being carried out in association with Quality Council of India. Mr. Mukherjee has been appointed as the authorized representative by the empanelled agency/organization for Odisha, overseeing the smooth execution, coordination, and implementation of the project activities across the state.
+</p>
             </div>
           </div>
 
@@ -163,7 +165,8 @@ function EducationZedSection() {
               <span className="text-[0.6rem] font-bold tracking-widest uppercase text-white/40">Academic Innovation</span>
             </div>
             <h3 className="font-black text-3xl mb-5 leading-tight">Vidya Bhawan <br/><span className="text-[#007BFF]">(IIT Bhubaneswar)</span></h3>
-            <p className="text-sm text-white/60 leading-relaxed mb-8 flex-1">Deploying advanced pedagogical tools for premier technical ecosystems, shaping the engineers of tomorrow.</p>
+            <p className="text-sm text-white/60 leading-relaxed mb-8 flex-1"> This is an education-focused project assigned to Focus Solution and authorized by Indian Institute of Technology Bhubaneswar. The project aims to support innovative learning initiatives and effective implementation of educational solutions across the assigned domain.
+</p>
             <div className="flex gap-2">
               {['Ed-Tech', 'Infrastructure'].map(tag => (
                 <span key={tag} className="px-4 py-2 rounded-full text-[0.6rem] font-bold bg-white/10 border border-white/10">{tag}</span>
@@ -180,6 +183,85 @@ function EducationZedSection() {
       </div>
     </section>
   )
+}
+
+function DataEntryGSTSection() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+          {/* Data Entry Project */}
+          <div className="reveal card-lift bg-[#F8FAFC] rounded-[40px] p-10 flex flex-col border border-[#007BFF]/10 shadow-lg">
+            <div className="w-full h-[180px] mb-8 rounded-2xl overflow-hidden">
+              <img
+                src="https://iisppr.org.in/wp-content/uploads/2025/04/Featured-image.jpg"
+                className="w-full h-full object-cover"
+                alt="Data Entry Project"
+              />
+            </div>
+
+            <div className="mt-auto">
+              <span className="inline-block px-4 py-1.5 rounded-full text-[0.6rem] font-bold bg-[#F0F7FF] text-[#007BFF] uppercase mb-4">
+                ✓ Professional Services
+              </span>
+
+              <h3 className="font-black text-2xl text-[#002D62] mb-3">
+                Data Entry Project
+              </h3>
+
+              <p className="text-sm text-[#556677] leading-relaxed">
+                This income generation program has been successfully implemented with the objective of creating sustainable employment opportunities and supporting economic growth. The project focuses on skill development, self-employment initiatives, and livelihood enhancement, contributing to improved financial stability and community empowerment.
+              </p>
+            </div>
+          </div>
+
+          {/* GST Suvidha Kendra */}
+          <div className="reveal reveal-delay-2 card-lift rounded-[40px] p-10 bg-[#002D62] text-white flex flex-col shadow-2xl">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-2xl">
+                🧾
+              </span>
+
+              <span className="text-[0.6rem] font-bold tracking-widest uppercase text-white/40">
+                Financial Assistance
+              </span>
+            </div>
+
+            <h3 className="font-black text-3xl mb-5 leading-tight">
+              GST Suvidha Kendra<br />
+              <span className="text-[#007BFF]">(Jana Seva Kendra)</span>
+            </h3>
+
+            <p className="text-sm text-white/60 leading-relaxed mb-8 flex-1">
+              Focus Solution is engaged in delivering authorized service-oriented projects across Odisha, with a strong commitment to quality, efficiency, and professional execution. The organization focuses on providing reliable support services, operational management, and project implementation tailored to various institutional and business requirements throughout the state.
+            </p>
+
+            <div className="flex gap-2 flex-wrap">
+              {["GST Filing", "Tax Support", "Business Services"].map((tag) => (
+                <span
+                  key={tag}
+                  className="px-4 py-2 rounded-full text-[0.6rem] font-bold bg-white/10 border border-white/10"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Image Section */}
+          <div className="reveal reveal-delay-3 rounded-[40px] overflow-hidden shadow-xl">
+            <img
+              src="https://gstsuvidhaprovider.finance.blog/wp-content/uploads/2019/12/gst-seva-kendra-franchise.jpg"
+              className="w-full h-full object-cover"
+              alt="GST Suvidha Kendra"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }
 
 /* ─────────────────────────────────────────────

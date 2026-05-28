@@ -88,6 +88,24 @@ function ContactHero() {
                 value="Niladri Vihar Omfed Colony, (Near Utkal Hospital) Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021"
               />
 
+              {/* Registered Office */}
+              <ContactInfoItem
+                icon={
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M3 21h18" />
+                    <path d="M5 21V7l7-4 7 4v14" />
+                    <path d="M9 9h.01" />
+                    <path d="M9 12h.01" />
+                    <path d="M9 15h.01" />
+                    <path d="M15 9h.01" />
+                    <path d="M15 12h.01" />
+                    <path d="M15 15h.01" />
+                  </svg>
+                }
+                label="Registered Office"
+                value="N-3/368, Jaydev Vihar, Bhubaneswar, Odisha. Pin-751013"
+              />
+
               <ContactInfoItem
                 icon={
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -114,7 +132,7 @@ function ContactHero() {
 
           {/* ── RIGHT: Form */}
           <div className="reveal from-right">
-            <div className="bg-white rounded-[40px] p-8 md:p-12 relative shadow-[0_30px_60px_rgba(0,45,98,0.08)] border border-[#007BFF]/5">
+            <div className="bg-white rounded-[40px] p-8 md:p-12 relative shadow-[0_30px_60px_rgba(0,45,98,0.08)] border border-[#007BFF]/5 min-h-[850px] flex flex-col justify-center">
               <div className="absolute top-8 right-8 px-5 py-2 rounded-full flex items-center gap-2 bg-[#F0F7FF] border border-[#007BFF]/10">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
                 <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#007BFF]">Responds in 24h</span>
@@ -127,7 +145,7 @@ function ContactHero() {
                   <p className="text-[#556677] max-w-[280px]">Our executive team has received your inquiry and will be in touch shortly.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="mt-8">
+                <form onSubmit={handleSubmit} className="mt-8 flex flex-col justify-between h-full">
                   <h3 className="text-[1.8rem] font-black tracking-tight text-[#002D62] mb-8">Direct Inquiry</h3>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
@@ -135,7 +153,7 @@ function ContactHero() {
                     <FormField label="Email Address" id="contact-email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} required />
                   </div>
 
-                  <div className="mb-8">
+                  <div className="mb-8 flex-1">
                     <label htmlFor="contact-message" className="block text-[0.75rem] font-bold tracking-widest uppercase text-[#556677] mb-3 ml-1">
                       Project Description
                     </label>
@@ -146,7 +164,7 @@ function ContactHero() {
                       placeholder="Describe your strategic goals..."
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-[20px] text-[0.95rem] outline-none transition-all duration-300 bg-[#F8FAFC] border border-[#007BFF]/5 focus:border-[#007BFF] focus:bg-white"
+                      className="w-full px-5 py-4 rounded-[20px] text-[0.95rem] outline-none transition-all duration-300 bg-[#F8FAFC] border border-[#007BFF]/5 focus:border-[#007BFF] focus:bg-white h-full"
                       required
                     />
                   </div>

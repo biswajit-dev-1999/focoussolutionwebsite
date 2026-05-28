@@ -164,7 +164,7 @@ function FounderLegalSection() {
             </div>
             <div className="bg-white/5 rounded-2xl p-6 sm:p-8 border border-white/10 mb-8">
               <p className="text-[0.6rem] font-bold uppercase tracking-widest text-[#007BFF] mb-2">GST Identification</p>
-              <p className="text-xl sm:text-2xl font-black tracking-widest break-all">18OOPM4494P1Z3</p>
+              <p className="text-xl sm:text-2xl font-black tracking-widest break-all">21AKBPM8511H3ZH</p>
             </div>
             <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
               <div>

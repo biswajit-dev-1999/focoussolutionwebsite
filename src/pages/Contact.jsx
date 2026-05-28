@@ -103,7 +103,7 @@ function ContactHero() {
                   </svg>
                 }
                 label="Registered Office"
-                value="N-3/368, Jaydev Vihar, Bhubaneswar, Odisha. Pin-751013"
+                value="N-3/368, IRC Village,Nayapalli, Bhubaneswar,Khurdha, Odisha - 751015"
               />
 
               <ContactInfoItem

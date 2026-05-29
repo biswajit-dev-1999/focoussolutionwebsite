@@ -13,7 +13,7 @@ export default function Projects() {
       <ProjectsHero />
       <FostacAirtelSection />
       <EducationZedSection />
-      <DataEntryGSTSection/>
+      <DataEntryGSTSection />
       <SalassSection />
       <ProjectsCTA />
     </main>
@@ -56,23 +56,25 @@ function ProjectsHero() {
           </div>
 
           {/* RIGHT SIDE (IMAGE) */}
-          <div className="reveal from-right relative flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="w-full max-w-[520px] h-[320px] sm:h-[420px] rounded-[40px] overflow-hidden shadow-[0_30px_60px_rgba(0,45,98,0.15)] border-8 border-white">
-              <img src="Signature.webp" alt="Impact" className="w-full h-full object-cover" />
-            </div>
+          <div className="reveal from-right flex justify-center lg:justify-end order-1 lg:order-2 mb-8 lg:mb-0">
+            <div className="relative w-full max-w-[520px]">
+              <div className="w-full h-[320px] sm:h-[420px] rounded-[40px] overflow-hidden shadow-[0_30px_60px_rgba(0,45,98,0.15)] border-[6px] border-white bg-white">
+                <img src="project.png" alt="Impact" className="w-full h-full object-cover" />
+              </div>
 
-            {/* FLOATING CARD */}
-            <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-xl border border-[#007BFF]/10">
-              <p className="text-[1.4rem] text-[#007BFF] mb-2 font-semibold italic">Precision at scale.</p>
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  {['#002D62', '#007BFF', '#E0F2FE'].map((c, i) => (
-                    <div key={i} className="w-8 h-8 rounded-full border-2 border-white" style={{ background: c }} />
-                  ))}
-                </div>
-                <div>
-                  <span className="block text-sm font-black text-[#002D62] leading-none">150+</span>
-                  <span className="text-[0.6rem] uppercase tracking-widest text-[#556677]">Projects</span>
+              {/* FLOATING CARD */}
+              <div className="absolute -bottom-6 left-4 sm:-left-6 lg:-left-10 bg-white shadow-2xl px-6 py-4 rounded-[24px] border border-[#007BFF]/10 z-20">
+                <p className="text-[1.2rem] text-[#007BFF] mb-2 font-black italic">Precision at scale.</p>
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-2">
+                    {['#002D62', '#007BFF', '#E0F2FE'].map((c, i) => (
+                      <div key={i} className="w-8 h-8 rounded-full border-2 border-white" style={{ background: c }} />
+                    ))}
+                  </div>
+                  <div>
+                    <span className="block text-sm font-black text-[#002D62] leading-none">150+</span>
+                    <span className="text-[0.6rem] uppercase tracking-widest text-[#556677]">Projects</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,7 +103,7 @@ function FostacAirtelSection() {
                 <span className="text-[0.65rem] font-bold tracking-widest uppercase text-[#556677]">Regulatory Impact</span>
               </div>
               <h2 className="font-black text-3xl text-[#002D62] mb-5">FOSTAC (FSSAI)</h2>
-              <p className="text-[#556677] leading-relaxed mb-8">This project is an initiative associated with Food Safety and Standards Authority of India. Mr. Mukherjee has been appointed as the authorized representative by the empanelled agency/organization for the states of Odisha and West Bengal, ensuring effective coordination and implementation of the project activities.</p>
+              <p className="text-[#556677] leading-relaxed mb-8">This project is an initiative associated with Food Safety and Standards Authority of India. Mr. Pradeep Kumar Mukherjee has been appointed as the authorized representative by the empanelled agency/organization <span className="font-bold text-[#007BFF]">(Sketch the add to create)</span> for the states of Odisha and West Bengal, ensuring effective coordination and implementation of the project activities.</p>
             </div>
             <Link to="#" className="text-sm font-bold uppercase text-[#007BFF] flex items-center gap-2 hover:gap-4 transition-all">
               View Case Study <span>→</span>
@@ -153,8 +155,11 @@ function EducationZedSection() {
             <div className="mt-auto">
               <span className="inline-block px-4 py-1.5 rounded-full text-[0.6rem] font-bold bg-[#F0F7FF] text-[#007BFF] uppercase mb-4">✓ Standard Achieved</span>
               <h3 className="font-black text-2xl text-[#002D62] mb-3">ZED Certification</h3>
-              <p className="text-sm text-[#556677]"> This project is being carried out in association with Quality Council of India. Mr. Mukherjee has been appointed as the authorized representative by the empanelled agency/organization for Odisha, overseeing the smooth execution, coordination, and implementation of the project activities across the state.
-</p>
+              <p className="text-sm text-[#556677] leading-relaxed">
+                <p className="text-sm text-[#556677] leading-relaxed mt-2">
+                  This initiative is conducted in partnership with <span className="font-bold text-black">Quality Council of India</span>. As the authorized representative for the empanelled agency <span className="font-bold text-[#00C7FF] whitespace-nowrap">(RSJ Inspection Services Pvt Ltd)</span> in Odisha, <strong className="font-semibold">Mr. Pradeep Kumar Mukherjee</strong> oversees seamless execution, strategic coordination, and comprehensive implementation of project activities across the state.
+                </p>
+              </p>
             </div>
           </div>
 
@@ -164,9 +169,9 @@ function EducationZedSection() {
               <span className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-2xl">🎓</span>
               <span className="text-[0.6rem] font-bold tracking-widest uppercase text-white/40">Academic Innovation</span>
             </div>
-            <h3 className="font-black text-3xl mb-5 leading-tight">Vidya Bhawan <br/><span className="text-[#007BFF]">(IIT Bhubaneswar)</span></h3>
-            <p className="text-sm text-white/60 leading-relaxed mb-8 flex-1"> This is an education-focused project assigned to Focus Solution and authorized by Indian Institute of Technology Bhubaneswar. The project aims to support innovative learning initiatives and effective implementation of educational solutions across the assigned domain.
-</p>
+            <h3 className="font-black text-3xl mb-5 leading-tight">Vidya Bhawan <br /><span className="text-[#007BFF]">(IIT Bhubaneswar)</span></h3>
+            <p className="text-sm text-white/60 leading-relaxed mb-8 flex-1"> This is an education-focused project assigned to Focus Solutions and authorized by Indian Institute of Technology Bhubaneswar. The project aims to support innovative learning initiatives and effective implementation of educational solutions across the assigned domain.
+            </p>
             <div className="flex gap-2">
               {['Ed-Tech', 'Infrastructure'].map(tag => (
                 <span key={tag} className="px-4 py-2 rounded-full text-[0.6rem] font-bold bg-white/10 border border-white/10">{tag}</span>

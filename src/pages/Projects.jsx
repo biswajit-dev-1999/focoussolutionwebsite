@@ -103,7 +103,7 @@ function FostacAirtelSection() {
                 <span className="text-[0.65rem] font-bold tracking-widest uppercase text-[#556677]">Regulatory Impact</span>
               </div>
               <h2 className="font-black text-3xl text-[#002D62] mb-5">FOSTAC (FSSAI)</h2>
-              <p className="text-[#556677] leading-relaxed mb-8">This project is an initiative associated with Food Safety and Standards Authority of India. Mr. Pradeep Kumar Mukherjee has been appointed as the authorized representative by the empanelled agency/organization <span className="font-bold text-[#007BFF]">(Sketch the add to create)</span> for the states of Odisha and West Bengal, ensuring effective coordination and implementation of the project activities.</p>
+              <p className="text-[#556677] leading-relaxed mb-8">This project is an initiative associated with Food Safety and Standards Authority of India. Mr. Pradeep Kumar Mukherjee has been appointed as the authorized representative by the empanelled agency/organization <span className="font-bold text-[#007BFF]">(Sketch the Art to create)</span> for the states of Odisha and West Bengal, ensuring effective coordination and implementation of the project activities.</p>
             </div>
             <Link to="#" className="text-sm font-bold uppercase text-[#007BFF] flex items-center gap-2 hover:gap-4 transition-all">
               View Case Study <span>→</span>
